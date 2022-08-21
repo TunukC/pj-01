@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.block {
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  color: white;
+  padding-top: 30vh;
+  padding-left: 15vw;
+  position: relative;
+}
+.bg {
+  background: #444
+    url(https://images.news18.com/ibnlive/uploads/2021/12/mountain-day-1-16391587883x2.jpg)
+    no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  filter: saturate(80%) brightness(70%);
+}
+.title {
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  border-bottom: 1.5vw;
+  border-bottom: 0.4vw solid #fff;
+  text-shadow: var(--shadow);
+  position: relative;
+}
+.title::after {
+  content: "";
+  display: block;
+  padding-right: 4vw;
+  text-shadow: var(--shadow);
+}
